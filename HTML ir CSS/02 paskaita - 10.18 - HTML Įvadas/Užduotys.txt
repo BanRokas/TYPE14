@@ -1,0 +1,4 @@
+1) Sukurti nerikiuotą sąrašą, kuriame būtų išvardinti dalykai, kuriuos šiandien išmokote (nereikia labai detaliai).
+2) Sukurti rikiuotą sąrašą, kuriame būtų išvardinti dalykai, kuriuos norėtumėte kuo greičiau išmokti (eilės tvarka nuo labiausiai iki mažiausiai).
+3) Sukurkite lentelę, kurioje būtų informacija apie 5 jūsų mėgstamiausias vietas (kur norėtumėte nuvykti, kur jau buvote ir t.t.). Informacija apie vietas: Eilės numeris; Pavadinimas; Šalis; Buvau/Nebuvau; Paveiksliukas; Nuoroda;
+4) Pasitestuoti formoje input tipus.
