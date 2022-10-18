@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 paskaita - HTML įvadas</title>
+  <style>
+    .redText{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div> <!-- išbandome tag'us -->
+    <h1>Antraštė 1</h1>
+    <h2>Antraštė 2</h2>
+    <h3>Antraštė 3</h3>
+    <h4>Antraštė 4</h4>
+    <h5>Antraštė 5</h5>
+    <h6>Antraštė 6</h6>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ratione odit aliquid consectetur natus dolor non ullam, in laboriosam laudantium maxime expedita obcaecati. Aliquid saepe voluptatem iusto incidunt dolores, rerum minus sint possimus autem delectus neque dignissimos fugiat sequi perspiciatis similique expedita consequuntur reiciendis deleniti odit vel vero quidem. Doloribus.
+    </p>
+    <hr>
+    <img src="./images/cat.png" alt="katinukas" width="100px" height="auto">
+    <br>
+    <a href="https://www.google.lt/" target="_blank">Parašytas tekstas</a>
+    <ol>
+      <li>pirmas</li>
+      <li>antras</li>
+      <li>trecias</li>
+    </ol>
+    <ul>
+      <li>pirmas</li>
+      <li>antras</li>
+      <li>trecias - paaiškinimas</li>
+    </ul>
+    <dl>
+      <dt>Terminas</dt>
+      <dd>Termino duomenys (paaiškinimas)</dd>
+      <dt>Terminas2</dt>
+      <dd>Termino duomenys2 (paaiškinimas)</dd>
+    </dl>
+    <table border>
+      <caption>Lentelės PAVADINIMAS</caption>
+      <!-- <colgroup>
+        <col>
+        <col span="2" class="redText">
+      </colgroup> -->
+      <thead>
+        <tr>
+          <th>Vardas</th>
+          <th>Pavardė</th>
+          <th>Amžius</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rokas</td>
+          <td>Banaitis</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>Petras</td>
+          <td>Petraitis</td>
+          <td rowspan="2">55</td>
+        </tr>
+        <tr>
+          <td>Jonas</td>
+          <td>Jonaitis</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Suma</th>
+          <th>136</th>
+        </tr>
+      </tfoot>
+    </table>
+    <hr>
+    <form>
+      <label for="vardas">Vardas:</label>
+      <input type="text" name="vardas" id="vardas"><br>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Vieta jūsų komentarui..."></textarea><br>
+      <select name="" id="">
+        <option value="0">vartotojas mato 1</option>
+        <option value="1" selected>vartotojas mato 2</option>
+        <option value="2">vartotojas mato 3</option>
+      </select>
+    </form>
+  </div>
+  <div> <!-- Sąrašai -->
+    <div> <!-- Tag'ų sąrašas -->
+      <h1>Tag'ų sąrašas</h1>
+      <ul>
+        <li>h1-h6 - Heading - Antraštė skirta rašyti pavadinimams</li>
+        <li>p - Paragraph - Paragrafas</li>
+        <li>img - Image - Paveiksliukas</li>
+        <li>a - Hypertext Anchor (hyperlink) - Nuoroda</li>
+        <li>br - Line Break - Eilutės lūžis</li>
+        <li>hr - Thematic Break (horizontal line) - Eilutės lūžis su brūkšniu</li>
+        <li>ol - Ordered list - Rikiuotas sąrašas</li>
+        <li>ul - Unordered list - Nerikiuotas sąrašas</li>
+        <li>li - List item - Sąrašo elementas</li>
+        <li>dl - Description list (detailed list) - Aprašomasis (detalusis) sąrašas</li>
+        <li>dt - Description term - Aprašomojo sąrašo terminas</li>
+        <li>dd - Description definition - Termino aprašymas</li>
+        <li>div - Tuščias blokinis elementas skirtas grupuoti kitus elementus</li>
+        <li>link - Skirtas prijungti kitus failus (pagrinde CSS) prie kodo</li>
+        <li>script - Skirtas rašyti/prijungti JS kodą</li>
+        <li>style - Skirtas rašyti CSS kodą</li>
+        <li>table - Lentelė</li>
+        <li>caption - Lentelės pavadinimas</li>
+        <li>colgroup - column group - Lentelių grupės</li>
+        <li>col - column - Stulpelis</li>
+        <li>thead - table head - Lentelės viršutinė dalis</li>
+        <li>tbody - table body - Lentelės kūnas</li>
+        <li>tfoot - table foot - Lentelės apatinė dalis</li>
+        <li>tr - table row - Lentelės eilutė</li>
+        <li>th - table heading - Lentelės stulpelio pavadinimas</li>
+        <li>td - table data - Lentelės duomenys</li>
+        <li>form - Forma</li>
+        <li>label - Etiketė prikabinama prie formos įvesties lauko</li>
+        <li>input - Įvesties laukas su LABAI DAUG skirtingų tipų</li>
+        <li>textarea - Įvesties laukas skirtas didesniam kiekiui teksto</li>
+        <li>select - Pasirinkimo laukelis</li>
+        <li>option - Pasirinkimo variantas</li>
+      </ul>
+    </div>
+    <div> <!-- Atributų sąrašas -->
+      <h1>Atributų sąrašas</h1>
+      <ul>
+        <li>lang - language - Nurodo puslapyje vyraujančią kalbą</li>
+        <li>charset - character set - Simbolių rinkinys</li>
+        <li>src - source - Šaltinis nurodo failą</li>
+        <li>href - hyperlink reference - Nurodo nuorodą/failą</li>
+        <li>alt - Alternative text - Alternatyvus tekstas elemento neužkrovimo atvejui</li>
+        <li>target - Nurodo/Nutaiko kur bus atidaryta paspausta nuoroda</li>
+        <li>width - Nurodo elemento plotį</li>
+        <li>height - Nurodo elemento aukštį</li>
+        <li>rel - relation - Nurodo nurodomo failo santykį su esamu failu</li>
+        <li>defer - Nurodo, kad failas būtų perskaitytas po to kai užsikraus puslapis</li>
+        <li>rowspan - Užimamų eilučių kiekis</li>
+        <li>colspan - Column span - Užimamų stulpelių kiekis</li>
+        <li>span - Stulpelių kiekis (naudojamas colgroup viduje esančiam col tag'ui)</li>
+        <li>for - Skirtas nurodyti kuriam įvesties laukui yra skirta atiketė</li>
+        <li>type - Skirtas nurodyti input'o tipą</li>
+        <li>name - Įvesties laukelio vardas (pagal kurį pasiimama informacija)</li>
+        <li>id - Unikalus elemento pavadinimas (į jį nurodo for atributas)</li>
+        <li>class - Elemento klasė (skirta priskirti stilius)</li>
+        <li>cols - textarea įvesties lauko stulpelių kiekis(ilgis)</li>
+        <li>rows - textarea įvesties lauko eilučių kiekis(aukštis)</li>
+        <li>placeholder - Tekstas nusakantis kas turi būti įrašyta į įvesties laukelį</li>
+        <li>value - option tag'o vertė, kuri bus perduodama script'ui</li>
+      </ul>
+    </div>
+    <div> <!-- Klaviatūros trumpinių sąrašas -->
+      <h1>Klaviatūros trumpinių sąrašas</h1>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
