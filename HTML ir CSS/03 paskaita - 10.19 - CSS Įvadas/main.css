@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap');
+
+body{
+  font-family: 'Silkscreen';
+  font-weight: 400;
+  font-style: italic;
+}
+
+li{
+  font-size: 20px;
+  color: orange;
+}
+.juodasFonas{
+  background-color: black;
+}
+.didelisTekstas{
+  font-size: 32px;
+}
+#colorRed{
+  color: rgba(255, 0, 0, 0.565);
+}
+#bigText{
+  font-size: 24px;
+}
+.colorWithHex{
+  color: #f009;
+}
+
+.kvadratas{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(250, 94, 94);
+  border: 3px double rgb(41, 19, 97);
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+.linijinis{
+  display: inline;
+}
+.blokinis{
+  display: block;
+}
+.linijinisBlokinis{
+  display: inline-block;
+}
+
+.fonoDivas{
+  height: 300px;
+  width: 50%;
+}
+.fonoSpalva{
+  background-color: rgb(151, 242, 163);
+}
+.fonoImage1{
+  background-image: url('https://i.ytimg.com/vi/CZoA1PE1Q8k/maxresdefault.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.fonoImage2{
+  background-image: url('./images/nature2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.fonoImage3{
+  background-image: url('./images/nature3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.fonoGradientas{
+  background-image: linear-gradient(
+    to top right,
+    red,
+    blue,
+    green,
+    purple
+  );
+}
+.fonoGradientas2{
+  background-image: radial-gradient(
+    circle at center,
+    red,
+    blue,
+    green,
+    purple
+  );
+}

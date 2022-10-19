@@ -1,0 +1,2 @@
+1) Sukurti 5 vėliavas su jų šalių pavadinimais virš vėliavų.
+2) Pasidomėkite gradientais.

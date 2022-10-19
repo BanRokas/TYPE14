@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 paskaita - CSS Įvadas</title>
+  <style>
+    p{
+      color: green;
+      border: 2px dashed black;
+    }
+  </style>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div> <!-- Kurso moduliai -->
+    <h1>Kurso moduliai</h1>
+    <ol>
+      <li>HTML - Hyper Text Markup Language - Puslapio struktūros eiliškumas ir informacija</li>
+      <li>CSS - Cascading Style Sheets - Puslapio stilius</li>
+      <li>JS - Java Script - Puslapio funkcionalumas</li>
+      <li>JS DOM - Java Script Document Object Model - JS pagalba keičiamas HTML</li>
+      <li>NodeJS - Node Java Script - Serverio pusės programavimas (BackEnd)</li>
+      <li>TS - Type Script - JavaScript rašymo taisyklių rinkinys</li>
+      <li>React - Puslapių kūrimo būdas (labai cool)</li>
+    </ol>
+  </div>
+  <div> <!-- CSS rašymo būdai -->
+    <h1>CSS rašymo būdai</h1>
+    <ul>
+      <li><span class="juodasFonas">Inline - Linijinis - CSS rašomas tag'o atidaromojoje dalyje style atributo viduje</span></li>
+      <li><span class="juodasFonas">Internal - Vidinis - CSS rašomas style tag'o viduje. Naudojama CSS sintaksė</span></li>
+      <li>External - Išorinis - CSS rašomas atskirame CSS faile, kuris yra prijungiamas prie HTML'o link tag'o pagalba. Naudojama CSS sintaksė</li>
+    </ul>
+    <p style="color: red; background-color: aquamarine;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="didelisTekstas">Quod</span> eveniet consectetur culpa cumque qui. Praesentium non adipisci libero incidunt minus!
+    </p>
+    <p>
+      <span class="juodasFonas didelisTekstas">Lorem ipsum dolor sit</span> amet consectetur adipisicing elit. In consequatur at doloribus ad? Quis amet dignissimos, magnam eveniet sapiente blanditiis?
+    </p>
+  </div>
+  <div> <!-- CSS Selectors -->
+    <h1>CSS Selektoriai</h1>
+    <ul>
+      <li id="colorRed">Element - Parenka nurodytą tag'ą (p)</li>
+      <li id="bigText">Class - Parenka elementą, kuris turi nurodytą klasę (.klasesPavadinimas)</li>
+      <li id="bigText colorRed">ID - Parenka elementą, kuris turi nurodytą ID (#ID_pavadinimas)</li> <!-- nenaudoti kelių ID vienam elementui ir nenaudoti vieno ID keliems elementams -->
+    </ul>
+  </div>
+  <div> <!-- Spalvos -->
+    <h1>Spalvos</h1>
+    <ul>
+      <li>Spalvos pavadinimas - Nurodai spalvai priskirtą pavadinimą</li>
+      <li>RGB - Nurodai spalvos RGB kodą</li>
+      <li>HEX - Nurodai slapvos HEX kodą</li>
+    </ul>
+    <p>
+      Yra 140 skirtingų spalvų pavadinimai. Norint priskirti spalvą - nurodai norimos spalvos pavadinimą. (red)
+    </p>
+    <p>
+      Red Green Blue gali turėti reikšmes nuo 0 iki 255. Norint pridėti permatomumą, prie RGB reikia pridėti Alpha nustatymą, kuris eina nuo 0 iki 1. (rgb(0,255,10) | rgba(0,255,10,0.564))
+    </p>
+    <p>
+      Hexidecimal (16'ainis) gali turėti reikšmes nuo 00 iki ff. Noring pridėti permatomumą, prie HEX reikia pridėti papildomą nurodymą, kuris eina nuo 00 iki ff. (#00ff0a | #00ff0a90)<br>
+      HEX kodas skaičiuojamas nuo 0 iki 9 ir nuo a iki f. Pvz.: 00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 ... 19 1a 1b ... 1f 20 ... 9f a0 a1 a2 a3 ... a9 aa ab ac ad ae af b0 ... ff<br>
+      HEX kodas gali būti užrašomas trumpiniais, tokiu atveju, jeigu visi jo simboliai kartojasi du kartus: #aabbcc -> #abc
+    </p>
+  </div>
+  <div> <!-- Display -->
+    <h1>Display</h1>
+    <ul>
+      <li>Inline - Linijinis</li>
+      <li>Block - Blokinis</li>
+      <li>Inline-Block - Linijinis-Blokinis</li>
+    </ul>
+    <p>
+      Linijinis elementas užima tik tiek vietos, kiek reikalauja jo viduje esantis content'as. Linijiniam elementui negalima nustatyti dydžio (width/height).
+    </p>
+    <p>
+      Blokinis elementas užima visą eilutę. Blokiniui elementui galima nustatyti dydį (width/height).
+    </p>
+    <p>
+      Linijinis-Blokinis elementas užima tik tiek vietos kiek reikalauja jo viduje esantis content ARBA yra nurodyto dydžio (width/height).
+    </p>
+    <hr>
+    <div> <!-- Linijiniai -->
+      <h2>Linijiniai</h2>
+      <div class="kvadratas linijinis">1</div>
+      <div class="kvadratas linijinis">2</div>
+      <div class="kvadratas linijinis">3</div>
+    </div>
+    <div> <!-- Blokiniai -->
+      <h2>Blokiniai</h2>
+      <div class="kvadratas blokinis">1</div>
+      <div class="kvadratas blokinis">2</div>
+      <div class="kvadratas blokinis">3</div>
+    </div>
+    <div> <!-- Linijiniai-Blokiniai -->
+      <h2>Linijiniai-Blokiniai</h2>
+      <div class="kvadratas linijinisBlokinis">1</div><div class="kvadratas linijinisBlokinis">2</div><div class="kvadratas linijinisBlokinis">3</div>
+    </div>
+  </div>
+  <div> <!-- Backgrounds -->
+    <h1>Backgrounds</h1>
+    <div class="fonoDivas fonoSpalva"></div>
+    <div class="fonoDivas fonoImage1"></div>
+    <div class="fonoDivas fonoImage2"></div>
+    <div class="fonoDivas fonoImage3"></div>
+    <div class="fonoDivas fonoGradientas"></div>
+    <div class="fonoDivas fonoGradientas2"></div>
+  </div>
+</body>
+</html>
