@@ -1,0 +1,2 @@
+1) Sukurti puslapį naudojant semantinius tag'us, kuriame būtų sekcijos ar straipsniai apie 5 jūsų mėgstamiausias vietas. Apie vietas turi būti aprašyta minimali info, nuotrauka. Turi būti menu, kuris nukreips į atskiras sekcijas/straipsnius.
+2 extra) Pabandyti sukurti dropDown menu (hover arba click), kuris nukels į skirtingus pozicijų pavyzdžius. (tame html'e, kur mokinomės dalykus)

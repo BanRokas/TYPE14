@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 paskaita - HTML ir CSS praktika</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- 
+    peržiūrim CAO
+    Semantiniai tag'ai
+    Positions
+    Menu
+    Užduotis
+  -->
+  <header>
+    <nav>
+      <a href="#semantiniaiTagai">Semantiniai tag'ai</a>
+      <a href="#positions">Pozicijos</a>
+      <a href="#positionInfo">Pozicijų info</a>
+    </nav>
+  </header>
+  <main>
+    <section id="semantiniaiTagai">
+      <!-- <div id="semantiniaiTagai" class="menuHelper"></div> -->
+      <h1>Semantiniai tag'ai</h1>
+      <ul>
+        <li>header - puslapio viršutinė dalis</li>
+        <li>nav - menu (svetainės/puslapio navigacija)</li>
+        <li>main - puslapio turinio vieta</li>
+        <li>aside - šoninis laukas (menu/nuorodos/reklamos...)</li>
+        <li>section - puslapio sekcijai/temai/straipsniui... aprašyti</li>
+        <li>article - puslapio sekcijai/temai/straipsniui... aprašyti</li>
+        <li>footer - puslapio apatinė dalis</li>
+      </ul>
+    </section>
+    <section id="positions">
+      <!-- <div id="positions" class="menuHelper"></div> -->
+      <h1><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">Pozicijos</a></h1>
+      <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+      </ul>
+      <h1>Papildomi pozicijų stiliai</h1>
+      <p>
+        Priskiriant elementui betkurią poziciją (apart static), elementas įgauna galimybę naudotis šiais stiliais: top/bottom/left/right/z-index.<br>
+        Top/bottom/left/right priklausomai nuo suteiktos pozicijos, nurodo elemento poziciją puslapyje.<br>
+        Z-index nurodo elemento sluoksnį puslapyje.
+      </p>
+    </section>
+    <section id="positionInfo">
+      <!-- <div id="positionInfo" class="menuHelper"></div> -->
+      <div id="static">
+        <h3>Static</h3>
+        <p>
+          Statinis elementas neįgauna jokių stilių ir negali naudoti top/left/right/bottom/z-index.
+        </p>
+        <div class="kvadratas static">static 1</div>
+        <div class="kvadratas static">static 2</div>
+        <div class="kvadratas static">static 3</div>
+        <div class="kvadratas static">static 4</div>
+      </div>
+      <div id="relative">
+        <h3>Relative</h3>
+        <p>
+          Relatyvus elementas neįgauna jokių stilių, bet suteikia galimybę naudotis top/left/right/bottom/z-index stiliais.<br> Relatyviajam elementui suteiktas top/left/right/bottom nustatymas nusako per kokį atstumą atsitraukti nuo nurodytos kraštinės, nuo savo pradinės pozicijos.<br> Relatyvusis elementas tuo pačiu nurodo ribas savo viduje esančiam/tiems absolute pozicijos elementams.
+        </p>
+        <div class="kvadratas relative l160 b10 z5">relative 1</div>
+        <div class="kvadratas static">static 2</div>
+        <div class="kvadratas relative t50 z10">relative 3</div>
+        <div class="kvadratas static">static 4</div>
+      </div>
+      <div id="absolute" class="relative">
+        <h3>Absolute</h3>
+        <p>
+          Absoliutusis elementas išeina iš puslapio tėkmės (praranda savo poziciją puslapyje) ir sutekia galimybę naudotis top/left/right/bottom/z-index stiliais.<br> Absoliučiąjam elementui suteiktas top/left/right/bottom jis atsitraukia per nurodytą atstumą, nuo nurodytos kraštinės, nuo artimiausio protėvinio elemento, kuris turi relatyviąją poziciją.
+        </p>
+        <div class="kvadratas static">static 1</div>
+        <div class="kvadratas static">static 2</div>
+        <div class="kvadratas absolute t50 r90">absolute 3</div>
+        <div class="kvadratas static">static 4</div>
+      </div>
+      <div id="fixed">
+        <h3>Fixed</h3>
+        <p>
+          Fiksuotas elementas išeina iš puslapio tėkmės (praranda savo poziciją puslapyje), fiksuojasi vienoje vietoje (scroll'inant puslapyje lieka savo pozicijoje) ir sutekia galimybę naudotis top/left/right/bottom/z-index stiliais.<br> Fiksuotam elementui suteiktas top/left/right/bottom jis atsitraukia ir fiksuojasi per nurodytą atstumą, nuo nurodytos viewport'o (ekrano lauko) kraštinės.
+        </p>
+        <div class="kvadratas static">static 1</div>
+        <div class="kvadratas static">static 2</div>
+        <div class="kvadratas fixed t50 r90">fixed 3</div>
+        <div class="kvadratas static">static 4</div>
+      </div>
+      <div id="sticky" class="aukstasDiv">
+        <h3>Sticky</h3>
+        <p>
+          Lipnusis elementas neįgauna jokių stilių, bet suteikia galimybę naudotis top/left/right/bottom/z-index stiliais.<br> Lipniajam elementui suteiktas top/left/right/bottom jis prilimpa per nurodytą atstumą, nuo nurodytos viewport'o (ekrano lauko) kraštinės, kai ši jį pasiekia ir juda savo tėvinio elemento ribose.
+        </p>
+        <div class="kvadratas static">static 1</div>
+        <div class="kvadratas static">static 2</div>
+        <div class="kvadratas sticky t50">sticky 3</div>
+        <div class="kvadratas static">static 4</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  height: 500vh;
+}
+
+*[id]{
+  /* position: relative; */
+  scroll-margin-top: 30px;
+  /* padding-top: 30px; */
+}
+/* .menuHelper{
+  position: absolute;
+  top: -30px;
+} */
+
+header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(176, 255, 229);
+  z-index: 100;
+}
+
+.kvadratas{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(72, 69, 37);
+  color: rgb(0, 220, 0);
+  border: 5px dotted rgb(210, 249, 254); 
+}
+
+.static{
+  position: static;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
+.sticky{
+  position: sticky;
+}
+
+.t50{
+  top: 50px;
+}
+.l160{
+  left: 160px;
+}
+.b10{
+  bottom: 10px;
+}
+.r90{
+  right: 90px;
+}
+.z5{
+  z-index: 5;
+}
+.z10{
+  z-index: 10;
+}
+
+.aukstasDiv{
+  height: 500px;
+  background-color: antiquewhite;
+}
