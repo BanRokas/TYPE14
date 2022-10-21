@@ -1,0 +1,44 @@
+/* @import url('https://gist.githubusercontent.com/DavidWells/18e73022e723037a50d6/raw/31b030534440f31f3ddcd72c4916cc47eb1be520/reset.css'); */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+section{
+  background-color: rgb(199, 252, 252);
+}
+
+.paveldejimas{
+  width: 500px;
+  background-color: beige;
+  border: 5px solid black;
+
+  color: red;
+  font-size: 30px;
+  
+  list-style-type: ":)";
+}
+
+#stiliuPrioritetai > div{
+  height: 100px;
+  width: 300px;
+}
+#fonas{
+  background-color: green;
+}
+.fonas2{
+  background-color: purple !important;
+}
+.fonas1{
+  background-color: yellow;
+}
+div{
+  background-color: red !important;
+}
+
+.linkViduje{
+  color: green;
+}
+
+.alert{
+  font-size: 32px;
+  color: red;
+  text-transform: uppercase;
+}

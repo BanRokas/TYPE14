@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 paskaita - CSS niuansai</title>
+  <!-- <link rel="stylesheet" href="https://gist.githubusercontent.com/DavidWells/18e73022e723037a50d6/raw/31b030534440f31f3ddcd72c4916cc47eb1be520/reset.css"> -->
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <section id="teviniaiVaikiniai">
+      <h1>Tėviniai ir vaikiniai elementai</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>vaikinis elementas tr'ui, kuris yra VE thead'ui, kuris yra VE table'ui</th>
+            <th>vaikinis elementas tr'ui, kuris yra VE thead'ui, kuris yra VE table'ui</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pirmas">
+            <td colspan="2">vaikinis elementas tr'ui su klase "pirmas", kuris yra VE tbody'ui, kuris yra VE table'ui</td>
+          </tr>
+          <tr class="antras">
+            <td colspan="2">vaikinis elementas tr'ui su klase "antras", kuris yra VE tbody'ui, kuris yra VE table'ui</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Elementas gali turėti TIK vieną tėvinį elementą.<br>
+        Elementas gali turėti daugelį vaikinių elementų.
+      </p>
+    </section>
+    <section id="paveldejimas">
+      <h1>Paveldėjimas</h1>
+      <p>
+        Iš tėvinio elemento, vaikiniai elementai paveldi tam tikrus stilius. Paveldimi stiliai dažniausiai būna paprasti kaip: color, font-size, font-family... Nepaveldimi stiliai yra: width, height, display, border, fonai...
+      </p>
+      <ul class="paveldejimas">
+        <li>1</li>
+        <li>2</li>
+        <li>3
+          <ul>
+            <li>3.1</li>
+            <li>3.2</li>
+            <li>3.3</li>
+          </ul>
+        </li>
+        <li>4</li>
+      </ul>
+    </section>
+    <section id="stiliuPrioritetai">
+      <h1>Stilių prioritetai</h1>
+      <ol>
+        <li>Inline Style</li>
+        <li>ID</li>
+        <li>Class</li>
+        <li>Element Selector</li>
+        <li>CSS order (in CSS code)</li>
+        <li>Element default style (user agent stylesheet)</li>
+        <li>Inheritence</li>
+      </ol>
+      <div style="background-color: blue" class="fonas2 fonas1" id="fonas"></div>
+      <div class="linkViduje">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="https://www.google.lt">Goooooogle</a>
+      </div>
+      <p>
+        Esant dviem selektoriam, kurie nusako to paties elemento vienodus stilius, yra atsižvelgiama į tų selektorių prioritetus. Aukščiau esantys selektoriai, turi didesnį prioritetą (žiūrėti į sąrašą).<br>
+        Esant dviem vienodo prioriteto selektoriams, kurie nusako to paties elemento vienodus stilius,yra atsižvelgiama į tų selektorių CSS eiliškumą (kuris CSS'e parašytas vėliau, tas ir bus taikomas).
+      </p>
+      <p>
+        <span class="alert">Jeigu tik įmanoma - nenaudoti!!!</span> !important prierašo prie stiliau. Jis ignoruoja visus prioritetus ir suteikia tą stilių, kurio jau niekas nebepakeis, apart kito !important prierašo.
+      </p>
+    </section>
+    <section id="svetainiuNumatytiejiStiliai">
+      <h1>Svetainių numatytieji stiliai</h1>
+      <h2>Svetainių numatytieji stiliai</h2>
+      <p>
+        Tag'ai gali turėti savitus stilius, kurie jiem yra suteikti pačių naršyklių.<br>
+        Kartais skirtingos naršyklės turi minimalistiškai skirtingus numatytuosius elementų stilius. Tai gali paveikti svetainės išvaizdą ją atidarant per skirtingas naršykles.
+      </p>
+      <p>
+        Yra keletas būdų kaip spręsti šias problemas.<br>
+        Vienas iš būdų naudoti Reset CSS, kuris panaikins visų tag'ų savybes / suvienodins visus tag'us (not very good option) <a href="https://gist.githubusercontent.com/DavidWells/18e73022e723037a50d6/raw/31b030534440f31f3ddcd72c4916cc47eb1be520/reset.css" target="_blank">Reset CSS</a>.<br>
+        Kitas būdas yra naudoti Normalize CSS, kuris suvienodina stilius tarp naršyklių ir panaikina labai erzinančius stilius (naudojamas dažniau) <a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target="_blank">Normalize CSS</a>. 
+      </p>
+    </section>
+  </main>
+</body>
+</html>
