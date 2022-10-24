@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 paskaita - Box Model</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <section id="boxModelInfo">
+      <h1>Box Model</h1>
+      <ol>
+        <li>Content - Turinys - Elemento informacija turinti plotį/aukštį</li>
+        <li>Padding - Pamušalas - Tarpas esantis tarp elemento turinio ir jo rėmelio (matomos elemento kraštinės)</li>
+        <li>Border - Rėmeliai - Linija tarp elemento pamušalo ir paraštė</li>
+        <li>Margin - Paraštė - Tarpas esantis tarp elemento rėmelio/krašto iki kito elemento rėmelio/krašto.</li>
+        <li>Position(t/r/b/l) - Pozicija(v/d/a/k) - Elemento atitraukimas nuo nurodytų kraštinių (viršus/dešinė/apačia/kairė).</li>
+      </ol>
+    </section>
+    <section id="boxModelParts">
+      <div id="content">
+        <h3>Content</h3>
+        <p>
+          Elemento turinys. Jo dydis keičiamas arba dedant daugiau turinio arba keičiant turinio dydį arba paties elemento dydį.<br>
+          Elemento turinys yra vizualiai matomas vartotojui. Yra spalvinamas fono spalvos.
+        </p>
+        <ul>
+          <li>width</li>
+          <li>height</li>
+          <li>font-size</li>
+        </ul>
+      </div>
+      <div id="padding">
+        <h3>Padding</h3>
+        <p>
+          Tarpas tarp elemento turinio ir rėmelio/kraštinės. Jis yra vizualiai matomas. Jis yra fono dalis.<br>
+          Galima nustatyti visas kraštines vienu stiliumi, arba kiekvieną kraštinę aprašinėti atskirai.
+        </p>
+        <ul>
+          <li>padding: top/right/bottom/left</li>
+          <li>padding: top/bottom right/left</li>
+          <li>padding: top right/left bottom</li>
+          <li>padding: top right bottom left</li>
+          <li>padding-top: top</li>
+          <li>padding-right: right</li>
+          <li>padding-bottom: bottom</li>
+          <li>padding-left: left</li>
+        </ul>
+      </div>
+      <div id="border">
+        <h3>Border</h3>
+        <p>
+          Linija tarp elemento pamušalo ir paraštės. Yra vizualiai matomas. Papildo elemento dydį.<br>
+          Rėmelis turi šiuos nustatymus: plotis, stilius, spalva, kampo apvalinimas. Kiekvienas iš šių stilių gali būti aprašytas atskirai kiekvienai kraštinei/kampui arba bendrai.
+        </p>
+        <ul>
+          <li>border: width style color</li>
+          <li>border-width: width</li>
+          <li>border-style: style</li>
+          <li>border-color: color</li>
+          <li>border-radius: %/px/em/rem</li>
+          <li>border-[corner]-radius: %/px/em/rem</li>
+          <li>border-[side]-[width/style/color]: [width/style/color]</li>
+        </ul>
+      </div>
+      <div id="margin">
+        <h3>Margin</h3>
+        <p>
+          Tarpas tarp elemento rėmelio/kraštinės ir kito elemento rėmelio/kraštinės/margin'o. Jis nėra vizualiai matomas.<br>
+          Galima nustatyti visas kraštines vienu stiliumi, arba kiekvieną kraštinę aprašinėti atskirai.<br>
+          Labai patogu naudoti "margin: 0 auto" norint išcentruoti blokinį elementą.
+        </p>
+        <ul>
+          <li>margin: top/right/bottom/left</li>
+          <li>margin: top/bottom right/left</li>
+          <li>margin: top right/left bottom</li>
+          <li>margin: top right bottom left</li>
+          <li>margin-top: top</li>
+          <li>margin-right: right</li>
+          <li>margin-bottom: bottom</li>
+          <li>margin-left: left</li>
+        </ul>
+      </div>
+      <!-- komentuoti pažymėtą/as eilutę/es - CTRL / -->
+      <!-- auto tabuliuoti failą - SHIFT ALT F -->
+      <div id="position">
+        <h3>
+          <a href="../04 paskaita - 10.20 - HTML ir CSS praktika/index.html" target="_blank">
+            Positions (top/right/bottom/left)
+          </a>
+        </h3>
+        <p>
+          Suteikus relatyvią poziciją galima nurodyti per kokį atstumą nuo nurodytos kraštinės elementas atsitrauks.
+        </p>
+      </div>
+    </section>
+    <section id="boxModelExample">
+      <div class="boxModeliukas">Laba diena, kaip laikotės? :)</div>
+    </section>
+  </main>
+</body>
+</html>

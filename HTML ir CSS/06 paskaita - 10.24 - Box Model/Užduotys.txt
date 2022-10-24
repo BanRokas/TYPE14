@@ -1,0 +1,5 @@
+1) Pasibaigti CAO (Lesson 5 Dėžutės modelis) kas nepasibaigę.
+2) Sukurti kortelę pagal paveiksliuką (už raudono rėmelio baltas fonas, ignoruokite foną). Sukurti 5 korteles apie jūsų mėgstamas vietas/filmus/aktorius...
+3) Pabaigti didelę savaitgalio užduotį.
+
+extra) Patobulinti kortelę - jeigu užeinama ant kortelės su pele - kaipnors parodomas kortelės aprašymas. (visa kortelė apsiverčia / kortelės teksto dalis apsiverčia / išnyksta pavadinimas ir atsiranda aprašymas........) (transition su transform)

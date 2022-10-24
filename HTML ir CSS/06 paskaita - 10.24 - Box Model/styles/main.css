@@ -1,0 +1,30 @@
+.boxModeliukas{
+  background-color: bisque;
+  font-size: 30px;
+
+  width: 500px;
+  height: 230px;
+
+  /* padding: 10px 20px 50px 15px; */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+
+  /* border: 25px dashed darkred; */
+  border-width: 15px;
+  border-style: dotted solid;
+  border-color: brown;
+  border-radius: 30px;
+  border-right-style: none;
+  border-top-left-radius: 100px 50px;
+
+  margin: 10px auto;
+  /* margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  margin-left: 15px; */
+
+  position: relative;
+  left: 100px;
+}
