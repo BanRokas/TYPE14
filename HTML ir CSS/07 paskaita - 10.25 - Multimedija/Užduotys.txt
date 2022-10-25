@@ -1,0 +1,8 @@
+1) Patobulinti CAO (Lesson 6 Multimedijos elementai) padarytą užduotį, kad kairėje pusėje esantis menu, būtų funkcionuojantis ir nukeltų į atitinkamus puslapius (priklausomai nuo to, ant kurio žanro paspausta). O tuose kituose puslapiuose viskas identiška apart įkeltų video, žanro pavadinimo puslapio viršuje ir menu elemento, kurio puslapyje dabar esama.
+
+2) Patobulinti kortelę (vakar dienos) - jeigu užeinama ant kortelės su pele - kaipnors parodomas kortelės aprašymas. (visa kortelė apsiverčia / kortelės teksto dalis apsiverčia / išnyksta pavadinimas ir atsiranda aprašymas........) (transition su transform)
+
+3) Padaryti papildomą sekciją, kurioje būtų nuotraukų galerija. (žiūrėti nuotrauką, kad būtų aiškiau)
+  3.1) Nuotraukos sulipusios vienos ant kitų naudojant pozicijas ir skirtingus z-index'us, bet kiekvienos nuotraukos turi matytis bent kažkoks mažas gabaliukas.
+  3.2) Užėjus su pele ant nuotraukos, ji yra iškeliama viršun visų kitų, kad pilnai ir aiškiai matytųsi.
+  3.3) Užėjus su pele ant nuotraukos ir jai iškilus viršun visų kitų, galima užeiti su pele ant kokios nors info dėžutės nuotraukos kampe ir tuomet pradedamas rodyti koks nors tekstas apie nuotrauką tos nuotraukos viduje.
