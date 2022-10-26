@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8 paskaita - Git ir Github</title>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <main>
+    <section id="cmd">
+      <h1>CommandPrompt / Terminal</h1>
+      <ul>
+        <li>cd - change directory - Vaikščioti tarp aplankalų</li>
+        <li>dir - list directories - Parodyti visus aplankalus/failus esančius dabartinėje direktorijoje (windows)</li>
+        <li>ls - list directories - Parodyti visus aplankalus/failus esančius dabartinėje direktorijoje (linux/mac)</li>
+        <li>mkdir - make directory - Sukuria naują aplankalą</li>
+        <li>touch - Sukuria naują failą</li>
+        <li>cat - Concatenate - Išveda failo informaciją arba sukuria naują failą ir leidžia į jį kažką rašyti jeigu naudojama su "> naujofailoVardas.tipas"</li>
+        <li>rm -r - Ištrina nurodytą aplankalą/failą rekursyviai(-r)</li>
+        <li>clear - Išvalo terminalo vaizdą</li>
+        <li>CTRL C - Nutraukia vykdomą komandą / Naikina rašomą eilutę</li>
+        <li>ARROW UP/DOWN - Pateikia paskutinę/sekančią vykdytą komandą</li>
+        <li>TAB - užbaigia rašomą pavadinimą / pasiūlo užbaigimus</li>
+      </ul>
+    </section>
+    <section id="gitConfig">
+      <h1>Git Config</h1>
+      <ul>
+        <li>git config --global user.name "vardas"</li>
+        <li>git config --global user.email "emailKuriuoKureiGitHubPaskyrą@gmail.com"</li>
+        <li>git config --global core.editor "code --wait"</li>
+        <li>git config --global core.autocrlf true|input  (windows|mac/linux)</li>
+        <li>git config --global -e</li>
+        <li>git config --help</li>
+      </ul>
+    </section>
+    <section id="gitCommand">
+      <h1>Git Commands</h1>
+      <ul>
+        <li>git init - inicializuoja git'o repozitoriją</li>
+      <li>git status - pateikia git'o repozitorijos statusą</li>
+      <li>git add failas.tipas - add'ina nurodytą/us failą/us į stage'ing area (paruošia failus commit'inimui (kodo versijos sukūrimui))</li>
+      <li>git rm --cached failas.tipas - remove'ina nurodytą/us failą/us iš stage'ing area (išima paruoštus commit'inimui failus iš paruošimo vietos)</li>
+      <li>git restore --staged - remove'ina nurodytą/us failą/us iš stage'ing area (išima paruoštus commit'inimui failus iš paruošimo vietos)</li>
+      <li>git commit -m "žinutė" - Sukuria kodo versiją</li>
+      <li>git checkout versijosID - perkels į nurodytą kodo versiją</li>
+      <li>git remote add origin HTTPS/SSH - prijungia lokalią repozitoriją prie nurodytos išorinės repozitorijos</li>
+      <li>git branch -m main - Pervadina dabartinę šaką į nurodytą pavadinimą</li>
+      <li>git push - Nusiunčia naujausią/as kodo versiją/as į GitHub</li>
+      <li>git pull - Atsiunčia naujausią/as kodo versiją/as iš GitHub</li>
+      <li>git clone HTTPS/SSH - Klonuoja nurodytą išorinę repozitoriją į esamą aplankalą</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
