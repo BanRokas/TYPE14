@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9 paskaita - Pseudo klasės</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <section id="selectors">
+      <h1>Basic Selectors</h1>
+      <ol>
+        <li>element - nurodytas/i elementas/ai (tag'as)</li>
+        <li>.class - elementas/ai su nurodyta klase</li>
+        <li>#id - elementas su nurodytu ID</li>
+        <li>* - viskas</li>
+        <li>selector selector - vieno selektoriaus viduje betkur esantis kitas selektorius</li>
+        <li>selector > selector - vieno selektoriaus viduje iškart esantis kitas selektorius</li>
+        <li>selector, selector - abiem selektoriam nurodomi stiliai vienu metu</li>
+        <li>selectorSelector - elementas turintis abu/visus nurodytus selektorius</li>
+        <li>selector1 + selector2 - elementas(selector2) einantis iš karto už kito elemento(selector1)</li>
+        <li>selector1 ~ selector2 - elementas(selector2) einantis už kito elemento(selector1)</li>
+      </ol>
+      <h1>Pseudo Selectors</h1>
+      <ol>
+        <li>:link - nelankyta nuoroda</li>
+        <li>:visited - lankyta nuoroda</li>
+        <li>:hover - kai pelės kūrsorius užėjęs ant elemento</li>
+        <li>:active - paspaudimo momentas</li>
+        <li>:empty - tuščias elementas (be teksto/tarpų/tag'ų)</li>
+        <li>:fullscreen - elementas esantis pilno ekrano būsenoje</li>
+        <li>:not(selector) - nurodo, kuris elementas neturi kažkokio stiliaus</li>
+        <li>:root - parenka dokumento šaknis (ne stilizuoti, o kurti kintamuosius)</li>
+        <li>:target - per nuorodą parinktas elementas</li>
+        <li>:first-child - pirmasis vaikinis elementas</li>
+        <li>:last-child - paskutinis vaikinis elementas</li>
+        <li>:only-child - vienintelis vaikinis elementas</li>
+        <li>:first-of-type - pirmasis kažkokio tipo elementas</li>
+        <li>:last-of-type - paskutinis kažkokio tipo elementas</li>
+        <li>:only-of-type - vienintelis kažkokio tipo elementas</li>
+        <li>:nth-child(nr) - kelintas(nr) vaikinis elementas</li>
+        <li>:nth-last-child(nr) - kelintas(nr) vaikinis elementas nuo galo</li>
+        <li>:nth-of-type(nr) -  kelintas(nr) kažkokio tipo elementas</li>
+        <li>:nth-last-of-type(nr) - kelintas(nr) kažkokio tipo elementas nuo galo</li>
+        <li>::before - prieš turinį esantis turinys</li>
+        <li>::after - po turinio esantis turinys</li>
+        <li>::marker - sąrašo elementų žymėklis</li>
+        <li>::first-letter - pirmoji elemento raidė</li>
+        <li>::first-line - pirmoji elemento eilutė (kuri atvaizduojama ekrane)</li>
+        <li>::selection - pažymėta informacija</li>
+      </ol>
+    </section>
+    <section id="selektoriuPvz">
+      <p>
+        1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quisquam!
+      </p>
+      <p>
+        2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quisquam!
+      </p>
+      <h1>
+        3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quisquam!
+      </h1>
+      <h1>
+        4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quisquam!
+      </h1>
+      <p>
+        5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quisquam!
+      </p>
+      <h1>
+        6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quisquam!
+      </h1>
+      <p>
+        7 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quisquam!
+      </p>
+    </section>
+  </main>
+</body>
+</html>
