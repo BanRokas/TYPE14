@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 paskaita - Forma ir Pseudo klasės</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <section id="formTags">
+      <h1>Formos tag'ai</h1>
+      <ul>
+        <li>form</li>
+        <li>button</li>
+        <li>input</li>
+        <li>label</li>
+        <li>textarea</li>
+        <li>select</li>
+        <li>option</li>
+        <li>output</li>
+        <li>optgroup</li>
+        <li>progress</li>
+        <li>fieldset</li>
+        <li>legend</li>
+      </ul>
+    </section>
+    <section id="inputTypes">
+      <h1>Input Types</h1>
+      <ul>
+        <li>button</li>
+        <li>checkbox</li>
+        <li>radio</li>
+        <li>color</li>
+        <li>date</li>
+        <li>datetime-local</li>
+        <li>week</li>
+        <li>month</li>
+        <li>time</li>
+        <li>email</li>
+        <li>file</li>
+        <li>hidden</li>
+        <li>image</li>
+        <li>number</li>
+        <li>password</li>
+        <li>range</li>
+        <li>reset</li>
+        <li>search</li>
+        <li>submit</li>
+        <li>tel</li>
+        <li>text</li>
+        <li>url</li>
+      </ul>
+    </section>
+    <section id="formPvz">
+      <form id="mokinamesForma">
+        <fieldset>
+          <legend>forma</legend>
+          <div>
+            <label for="name">Vardas:</label>
+            <input type="text" id="name" name="name" placeholder="Įrašykite savo vardą..." value="pradinis vardas">
+          </div>
+          <div>
+            <label for="surname">Pavardė:</label>
+            <input type="text" id="surname" name="surname">
+          </div>
+          <div>
+            <label for="vista">Vištiena</label>
+            <input type="checkbox" id="vista" name="maistas" value="vista">
+            <label for="zuvis">Žuvis</label>
+            <input type="checkbox" id="zuvis" name="maistas" value="zuvis">
+            <label for="sriuba">Sriuba</label>
+            <input type="checkbox" id="sriuba" name="maistas" value="sriuba">
+          </div>
+          <div>
+            <label for="small">S</label>
+            <input type="radio" id="small" name="tShirtSize" value="small">
+            <label for="medium">M</label>
+            <input type="radio" id="medium" name="tShirtSize" value="medium">
+            <label for="large">L</label>
+            <input type="radio" id="large" name="tShirtSize" value="large">
+          </div>
+          <div>
+            <label for="telNumber">Telefono numeris</label>
+            <input type="tel" id="telNumber" name="telNumber" pattern="[0-9]{1}-[0-9]{1}-[0-9]{2}" placeholder="9-9-99" required>
+          </div>
+          <div>
+            <textarea name="komentaras" id="komentaras" cols="30" rows="10" placeholder="Palikite savo komentarą..."></textarea>
+          </div>
+          <div>
+            <label for="pet">Pasirinkite savo augintinį</label>
+            <select name="pet" id="pet">
+              <option value="suo">Šuo</option>
+              <option value="kate">Katė</option>
+              <option value="ziurkenas">Žiurkėnas</option>
+              <option value="zuvele">Žuvelė</option>
+            </select>
+          </div>
+          <input type="submit">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+
+
+
+  <script>
+    document
+    .querySelector("#mokinamesForma")
+    .addEventListener('submit', (event) => {
+      event.preventDefault();
+      console.log(event);
+    });
+  </script>
+</body>
+</html>
