@@ -1,0 +1,38 @@
+.flexKonteineris{
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+  gap: 30px;
+}
+
+.kvadratas{
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  border: 3px dashed orange;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 100px;
+}
+
+.o1{
+  order: 1;
+}
+.o2{
+  order: 2;
+}
+.o3{
+  order: 3;
+}
+
+.fg1{
+  flex-grow: 1;
+}
+.fg3{
+  flex-grow: 3;
+}
