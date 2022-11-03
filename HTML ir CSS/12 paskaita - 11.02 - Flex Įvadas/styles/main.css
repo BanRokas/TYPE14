@@ -36,3 +36,72 @@
 .fg3{
   flex-grow: 3;
 }
+
+#gridFlexTASK{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: grey;
+}
+
+#gridFlexTASK > div{
+  width: 300px;
+  height: 300px;
+}
+
+.fonas{
+  background-image: url('../images/nature1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.fg1{
+  flex-grow: 1;
+}
+.fg2{
+  flex-grow: 2;
+}
+.fg3{
+  flex-grow: 3;
+}
+.fg4{
+  flex-grow: 4;
+}
+.w33{
+  width: 33%;
+}
+.w66{
+  width: 66%;
+}
+.h33{
+  height: 33%;
+}
+
+.w100{
+  width: 100%;
+}
+.h100{
+  height: 100%;
+}
+
+
+.flex_1_task{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.flex_3_task{
+  display: flex;
+  gap: 1px;
+}
+
+.flex_3_red_left, .flex_3_red_right{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.flex_3_green{
+  display: flex;
+  gap: 1px;
+}
