@@ -1,0 +1,13 @@
+:root{
+  --main-color-dark: #0000a0;
+  --main-color-normal: #00f;
+  --main-color-light: #4570fb;
+}
+
+body{
+  color: var(--main-color-dark);
+}
+
+.tamsiTema{
+  --main-color-dark: #002;
+}
